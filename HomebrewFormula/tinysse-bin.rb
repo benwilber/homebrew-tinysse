@@ -1,12 +1,12 @@
 class TinysseBin < Formula
     desc "A programmable server for Server-Sent Events (SSE)."
-    homepage "https://github.com/benwilber/tinysse"
-    version "0.4.0"
+    homepage "https://tinysse.com"
+    version "0.5.0"
 
     on_macos do
       if Hardware::CPU.intel?
         url "https://github.com/benwilber/tinysse/releases/download/v#{version}/macos-x86_64.tar.gz"
-        sha256 "046b34154389a191d9dc9d06a696bf0c7538c22282fa3bc0df4133b2186e642b"
+        sha256 "05d50c74bfc4717f930b937e5e16922fca1b8ab5565ed9c97391c5ba19712349"
 
         def install
             bin.install "tinysse"
@@ -15,7 +15,7 @@ class TinysseBin < Formula
 
       if Hardware::CPU.arm?
         url "https://github.com/benwilber/tinysse/releases/download/v#{version}/macos-aarch64.tar.gz"
-        sha256 "3215bce785947f2838936df9b7ff489f8a78a4e72d120c3a6c784c98378485ad"
+        sha256 "63ff8f3bb0cc470cbbb8102f395f70f067bf3f6ea0c3e551fa21f39c811c5c93"
 
         def install
             bin.install "tinysse"
